@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ludo Game</title>
+    <style>
+        /* Basic styles for the welcome container */
+        .welcome-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Style for the logo */
+        .logo {
+            width: 200px; /* Adjust as needed */
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Style for the start button */
+        .start-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+             
+        }
+
+        /* Style for powered by text */
+        .powered-by {
+            margin-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        /* Style for the dancing cartoon */
+        .dancing-cartoon {
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Distance from bottom */
+            left: 20px; /* Distance from left */
+            width: 150px; /* Adjust size as needed (increase this value) */
+            height: auto; /* Maintain aspect ratio */
+            animation: dance 1s infinite; /* Dancing animation */
+        }
+
+        /* Keyframes for dancing animation */
+        @keyframes dance {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-10px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Cloud styling */
+        .cloud {
+            position: fixed; /* Fixed position */
+            bottom: 260px; /* Adjust this value to move the cloud higher above the cartoon */
+            left: 10%; /* Center horizontally (adjust as needed) */
+            background: black;
+            border: 2px solid goldenrod;
+            border-radius: 15px; /* Rounded corners for cloud shape */
+            padding: 10px 20px; /* Padding around text */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            font-size: 16px; /* Font size for message */
+            display: flex; /* Flexbox for centering text */
+            align-items: center; /* Center text vertically */
+        }
+
+         
+        @keyframes cloud {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-10px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1>
+            <span style="color:blue;">L</span> 
+            <span style="color:red;">u</span> 
+            <span style="color:green;">d</span> 
+            <span style="color:yellow;">o</span>&nbsp; <span style="color: white;">Game</span>
+        </h1>
+        <img src="pngegg.png" alt="Ludo Logo" class="logo">
+       
+        <a href='./ludo main/index.html'class="start-button">Let's Start &#x2192;</a>
+        <div class="powered-by">Powered by Arpita</div>
+    </div>
+
+    <!-- Cartoon Character -->
+    <img src="cc.png" alt="Dancing Cartoon" class="dancing-cartoon"> <!-- Replace with your cartoon image path -->
+
+    <!-- Cloud with Welcome Message -->
+    <div class="cloud">
+      <span style="color:goldenrod;">  Welcome to the &nbsp; </span>  <span style="color:blue;">L</span> 
+        <span style="color:red;">u</span> 
+        <span style="color:green;">d</span> 
+        <span style="color:yellow;">o</span> #&nbsp;<span style="color: white;">Game !!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
